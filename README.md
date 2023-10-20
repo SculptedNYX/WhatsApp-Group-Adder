@@ -2,6 +2,7 @@
 This is a js app developed to allow mass addition of phone numbers to a whatsApp group
 
 # Disclaimer
+This app is not offical or related to developers from whatsapp <br>
 This app is built based on [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js#whatsapp-webjs) so please read their disclaimer.
 
 # Dependencies
@@ -38,10 +39,10 @@ node ./index
 ```
 
 # Usage
-Once the program is running you will get a QR code on screen. This QR code should be scanned using the whatsapp client (linked devices on whatsapp).
-If the link is completed you will see 'AUTHENTICATED' then 'Client is ready!'.
-Enter the group name you want the numbers to be added to.
-If the group is found you will be prompted to enter Y/y to begin the process.
+Once the program is running you will get a QR code on screen. This QR code should be scanned using the whatsapp client (linked devices on whatsapp).<br>
+If the link is completed you will see 'AUTHENTICATED' then 'Client is ready!'.<br>
+Enter the group name you want the numbers to be added to.<br>
+If the group is found you will be prompted to enter Y/y to begin the process.<br>
 The final output will be 3 lists.
 - Failed Numbers: this list containes all the numbers whatsapp couldn't resolve with their number in the file
 - Dublicate Numbers: this lists contains all the numbers already in the whatsapp group with their number in the file
