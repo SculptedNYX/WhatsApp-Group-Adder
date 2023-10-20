@@ -38,11 +38,19 @@ Now run this command to start the process
 node ./index
 ```
 
+# Handled cases
+- The number contains spaces
+- The number starts with 0 in typical egyptian fashion
+- The number starts with a valid country code
+All other cases are sent to their respective lists in the output
+
 # Usage
 Once the program is running you will get a QR code on screen. This QR code should be scanned using the whatsapp client (linked devices on whatsapp).<br>
 If the link is completed you will see 'AUTHENTICATED' then 'Client is ready!'.<br>
 Enter the group name you want the numbers to be added to.<br>
 If the group is found you will be prompted to enter Y/y to begin the process.<br>
+
+# Output
 The final output will be 3 lists.
 - Failed Numbers: this list containes all the numbers whatsapp couldn't resolve with their number in the file
 - Dublicate Numbers: this lists contains all the numbers already in the whatsapp group with their number in the file
