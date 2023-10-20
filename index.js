@@ -82,7 +82,7 @@ client.on('ready', async () => {
             console.log(failedNumberList);
             console.log("Dublicate Numbers: ");
             console.log(dublicateNumberList);
-            console.log("Weird Numbers: ");
+            console.log("Weird Errors: ");
             console.log(weirdErrorList); 
         }
         else{
