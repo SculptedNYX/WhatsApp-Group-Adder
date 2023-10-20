@@ -51,28 +51,40 @@ client.on('ready', async () => {
                 exit();
             }
             
+            // This array carries the numbers whatsapp couldnt add
             let failedNumberList = new Array();
+            // This array carries the numbers already existing in the group
             let dublicateNumberList = new Array();
+            // This array carries the numbers that caused unaccounted for issues
             let weirdErrorList = new Array();
 
             // Addition loop
             for(let i = 0; i < numberListLength; i++){
+                // Removes all spaces from number
                 let num = numberList[i].replace(/\s/g, '');
+
                 console.log("%d %s", (i+1), num)
+                // Formats the number into a whatsapp ID {CCnum@c.us} the country code (CC) is without the +
                 if(num.substring(0,1) == '0'){
+                    // This condition is purely there since egyptians start their numbers with 0's mostly instead of +20 so it adds the 2 at the start
                     num = 2 + num + '@c.us';
                 }
                 else if(num.substring(0,1) == '+'){
+                    // This handles more global cases
                     num = num.substring(1) + '@c.us';
                 }
 
+                // The addition request itself using the formated number
                 await myGroup.addParticipants([num]).catch((error) => {
                     let errorcase = error.toString();
                     if(errorcase.includes('invalid wid')){
+                        // Incase the whatsapp ID was invalid for anycase
                         failedNumberList.push((i+1) + " " + numberList[i]);
                     }else if(errorcase.includes('Evaluation failed: V')){
+                        // Incase dublication exists
                         dublicateNumberList.push((i+1) + " " + numberList[i]);
                     }else{
+                        // A catch all array
                         weirdErrorList.push((i+1) + " " + numberList[i]);
                     }
                 });
