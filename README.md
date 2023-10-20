@@ -49,5 +49,5 @@ The final output will be 3 lists.
 - Weird Errors: this list contains all the numbers that caused unexcpected errors (will be empty in most cases)
 
 # Credits
-[Julzk](https://github.com/Julzk/) for providing the whatsapp-web.js's hotfix
+[Julzk](https://github.com/Julzk/) for providing the whatsapp-web.js's hotfix <br>
 [pedroslopez](https://github.com/pedroslopez) for providing the whatsapp-web.js framework
