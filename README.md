@@ -2,6 +2,7 @@
 This is a js app developed to allow mass addition of phone numbers to a whatsApp group
 
 # Disclaimer
+This app is not offical or related to developers from whatsapp
 This app is built based on [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js#whatsapp-webjs) so please read their disclaimer.
 
 # Dependencies
