@@ -42,7 +42,7 @@ node ./index
 - The number contains spaces
 - The number starts with 0 in typical egyptian fashion
 - The number starts with a valid country code
-- All other cases are sent to their respective lists in the output
+- All other cases that arent added to the group are sent to their respective lists in the output 
 
 # Usage
 Once the program is running you will get a QR code on screen. This QR code should be scanned using the whatsapp client (linked devices on whatsapp).<br>
