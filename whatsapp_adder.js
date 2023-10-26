@@ -56,7 +56,7 @@ client.on('ready', async () => {
             // This array carries the numbers already existing in the group
             let dublicateNumberList = new Array();
             // This array carries the numbers that caused unaccounted for issues
-            let weirdErrorList = new Array();
+            let unExcpectedErrorList = new Array();
 
             // Addition loop
             for(let i = 0; i < numberListLength; i++){
@@ -85,7 +85,7 @@ client.on('ready', async () => {
                         dublicateNumberList.push((i+1) + " " + numberList[i]);
                     }else{
                         // A catch all array
-                        weirdErrorList.push((i+1) + " " + numberList[i]);
+                        unExcpectedErrorList.push((i+1) + " " + numberList[i]);
                     }
                 });
             }
@@ -94,8 +94,8 @@ client.on('ready', async () => {
             console.log(failedNumberList);
             console.log("Dublicate Numbers: ");
             console.log(dublicateNumberList);
-            console.log("Weird Errors: ");
-            console.log(weirdErrorList); 
+            console.log("Unexpected Errors: ");
+            console.log(unExcpectedErrorList); 
         }
         else{
             console.log("No group with name (%s) was found, exiting.", groupName);

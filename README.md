@@ -61,7 +61,7 @@ node ./index
 The final output will be 3 lists.
 - Failed Numbers: this list containes all the numbers whatsapp couldn't resolve with their number in the file
 - Dublicate Numbers: this lists contains all the numbers already in the whatsapp group with their number in the file
-- Weird Errors: this list contains all the numbers that caused unexcpected errors (will be empty in most cases)
+- Unexpected Errors: this list contains all the numbers that caused unexcpected errors (will be empty in most cases)
 
 # Credits
 to [Julzk](https://github.com/Julzk/) for providing the whatsapp-web.js's hotfix <br>
