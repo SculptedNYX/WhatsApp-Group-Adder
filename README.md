@@ -2,6 +2,7 @@
 This is a js app developed to allow mass addition of phone numbers to a whatsApp group
 
 # Disclaimer
+Currently the app sometimes runs into issues when adding numbers not in the contact list [Mentioned in this issue](https://github.com/pedroslopez/whatsapp-web.js/issues/2590) and i am actively working on a solution.<br>
 This app is not offical or related to developers from whatsapp <br>
 This app is built based on [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js#whatsapp-webjs) so please read their disclaimer.
 
@@ -42,7 +43,7 @@ node ./index
 - The number contains spaces
 - The number starts with 0 in typical egyptian fashion
 - The number starts with a valid country code
-- All other cases are sent to their respective lists in the output
+- All other cases that arent added to the group are sent to their respective lists in the output 
 
 # Usage
 Once the program is running you will get a QR code on screen. This QR code should be scanned using the whatsapp client (linked devices on whatsapp).<br>
