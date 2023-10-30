@@ -1,5 +1,4 @@
 const prompt = require('prompt-sync')();
-const google_contacts = require('./google_contacts');
 
 (async () => {
     let choice = '';
