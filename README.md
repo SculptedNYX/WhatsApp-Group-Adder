@@ -2,7 +2,7 @@
 This is a js app developed to allow mass addition of phone numbers to a whatsApp group through levreaging google contacts and whatsapp-web.js.
 
 # Description
-In order to achieve the goal of adding the list numbers.txt to a whatsapp group the app first creates a CSV file of the numbers then addes the numbers to [google contacts](https://contacts.google.com/). This step is required since sometimes the program encounters errors when trying to add non-contacts. After the csv is created and the google contacts added, The whatsapp group addition process starts. The additon process is handled using the [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js#whatsapp-webjs) framework.
+In order to achieve the goal of adding the list numbers.txt to a whatsapp group the app first creates a CSV file of the numbers that the user adds to [google contacts](https://contacts.google.com/). This step is required since sometimes the program encounters errors when trying to add non-contacts. After the csv is created and the google contacts added, The whatsapp group addition process starts. The additon process is handled using the [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js#whatsapp-webjs) framework.
 
 # Disclaimer
 - This app is not offical or related to developers from whatsapp.
@@ -51,11 +51,10 @@ node ./index
 # Usage
 1. First the user enters the numbers in the 'numbers.txt' file in the correct format.
 2. A prompt asking the user to create and import a csv to google contacts **NOTE: THIS IS ESSINTAL IF YOU DONT HAVE THE NUMBERS ALREADY IN YOUR CONTACTS**
-3. A prompt asking the user to enter their Gmail email and password. No information is collected on my behalf and you are encourged to check the code if you dont trust it
-4. The user should check their phone to make sure the contacts are synced then proceed to the next step
-5. Once the program is running you will get a QR code on screen. This QR code should be scanned using the whatsapp client (linked devices on whatsapp)
-6. Enter the group name you want the numbers to be added to
-7. If the group is found you will be prompted to enter Y/y to begin the process
+3. The user should check their phone to make sure the contacts are synced then proceed to the next step
+4. Once the program is running you will get a QR code on screen. This QR code should be scanned using the whatsapp client (linked devices on whatsapp)
+5. Enter the group name you want the numbers to be added to
+6. If the group is found you will be prompted to enter Y/y to begin the process
 
 # Output
 The final output will be 3 lists.

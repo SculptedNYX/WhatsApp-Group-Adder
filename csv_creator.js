@@ -19,7 +19,7 @@ const numberList = fs.readFileSync(FILENAME).toString().split("\n");
 const numberListLength = numberList.length;
 // Adds all the numbers to the records array
 for(let i = 0; i < numberListLength; i ++){
-    records.push({Name: `${(i+2)}`,Family: 'WhatsAppAdder' ,Type: '', Phone: numberList[i]});
+    records.push({Name: `${(i+1)}`,Family: `${(i+1)}` ,Type: '', Phone: numberList[i]});
 }
 
 // Writes to the CSV
